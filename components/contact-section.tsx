@@ -51,7 +51,7 @@ const socialMediaLinks = [
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/sadman-sadaf-islam/",
   },
-  { icon: Twitter, label: "Twitter", href: "https://twitter.com/sadmansadaf" },
+  { icon: Twitter, label: "Twitter", href: "https://twitter.com/sadafsadman" },
   {
     icon: ExternalLink,
     label: "Flickr",
