@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Sadman Sadaf Islam - Technical Support Specialist & Unix Server Administrator',
+  icons: {
+    icon: '/favicon.ico',
+  },
   description:
     'Technical Support Specialist with expertise in Unix server administration, database management, and production support for financial systems. Based in Toronto, ON.',
   keywords: [
