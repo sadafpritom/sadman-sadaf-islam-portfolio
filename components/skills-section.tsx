@@ -79,8 +79,15 @@ const skillCategories = [
   },
 ];
 
+// --- TypeScript Interface for AnimatedCounter props ---
+interface AnimatedCounterProps {
+  target: number;
+  colorClass: string;
+  startAnimation: boolean;
+}
+
 // Helper component for the animated percentage counter
-const AnimatedCounter = ({ target, colorClass, startAnimation }) => {
+const AnimatedCounter = ({ target, colorClass, startAnimation }: AnimatedCounterProps) => {
   const [count, setCount] = useState(0);
   const duration = 1000; // Animation duration in ms
 
@@ -90,10 +97,10 @@ const AnimatedCounter = ({ target, colorClass, startAnimation }) => {
       return;
     }
 
-    let startTime = null;
-    const end = parseInt(target);
+    let startTime: number | null = null;
+    const end = parseInt(target.toString(), 10);
 
-    const animate = (timestamp) => {
+    const animate = (timestamp: number) => {
       if (!startTime) startTime = timestamp;
       const progress = Math.min((timestamp - startTime) / duration, 1);
       const currentVal = Math.floor(progress * end);
@@ -267,4 +274,3 @@ export function SkillsSection() {
     </>
   );
 }
-
