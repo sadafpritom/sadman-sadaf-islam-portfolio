@@ -43,7 +43,7 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-20"
+      className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-32 pb-16"
     >
       <div className="max-w-4xl mx-auto text-center">
         <div className="fade-in-up">

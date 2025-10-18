@@ -12,11 +12,11 @@ import {
   Send,
   Github,
   Linkedin,
-  Twitter,
-  ExternalLink,
+  Instagram, // Changed from Twitter
+  Facebook,   // Changed from ExternalLink
   CheckCircle2,
 } from "lucide-react";
-import { useForm, ValidationError } from "@formspree/react";
+import { useForm } from "@formspree/react";
 
 // --- Contact Information ---
 const contactInformation = [
@@ -43,7 +43,7 @@ const contactInformation = [
   },
 ];
 
-// --- Social Media Links ---
+// --- Social Media Links (Updated) ---
 const socialMediaLinks = [
   { icon: Github, label: "GitHub", href: "https://github.com/sadafpritom" },
   {
@@ -51,13 +51,14 @@ const socialMediaLinks = [
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/sadman-sadaf-islam/",
   },
-  { icon: Twitter, label: "Twitter", href: "https://twitter.com/sadafsadman" },
+  { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/sadafpritom?igsh=MTllazdsc2QyY282dA%3D%3D&utm_source=qr" },
   {
-    icon: ExternalLink,
-    label: "Flickr",
-    href: "https://www.flickr.com/photos/197730320@N05/",
+    icon: Facebook,
+    label: "Facebook",
+    href: "https://www.facebook.com/sadaf.pritom/",
   },
 ];
+
 
 // --- Social Link Item ---
 interface SocialLinkItemProps {
@@ -209,11 +210,6 @@ export function ContactSection() {
                       onChange={handleInputChange}
                       className="glass-card bg-background/80 border-white/10 focus:border-primary/50"
                       placeholder="your.email@example.com"
-                    />
-                    <ValidationError
-                      prefix="Email"
-                      field="email"
-                      errors={state.errors}
                     />
                   </div>
                 </div>

@@ -47,7 +47,7 @@ const timelineEvents = [
 
 const funFacts = [
   { label: 'Years of Experience', value: '5+', icon: Award },
-  { label: 'Systems Supported', value: '20+', icon: Briefcase },
+  { label: 'Live Projects', value: '33+', icon: Briefcase },
   { label: 'Technologies Mastered', value: '25+', icon: Heart },
   /* { label: 'Uptime Maintained', value: '99.9%', icon: GraduationCap } */
 ];

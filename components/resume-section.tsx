@@ -40,7 +40,7 @@ const resumeHighlights = [
 const skills = [
   'Unix Server Administration', 'Database Management', 'Production Support', 
   'Technical Analysis', 'System Monitoring', 'Batch Processing',
-  'Incident Response', 'Shell Scripting', 'SQL Optimization', 'SIEM Tools', 'Penetration Testing', "OSINT", "Red Team"
+  'Incident Response', 'Shell Scripting', 'SQL Optimization', 'SIEM Tools', 'Penetration Testing', "OSINT", "Red Team", "React.js", 
 ];
 
 export function ResumeSection() {
