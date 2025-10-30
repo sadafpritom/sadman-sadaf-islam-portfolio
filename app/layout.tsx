@@ -9,6 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Sadman Sadaf Islam - Technical Support Specialist & Unix Server Administrator',
+  metadataBase: new URL('https://www.sadmansadaf.com'),
   icons: {
     icon: '/favicon.ico',
   },

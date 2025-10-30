@@ -1,0 +1,8 @@
+robots.txt for sadmansadaf.com
+
+User-agent: *
+Allow: /
+
+Directs all search engines to the static sitemap file
+
+Sitemap: https://www.google.com/search?q=https://www.sadmansadaf.com/sitemap.xml
