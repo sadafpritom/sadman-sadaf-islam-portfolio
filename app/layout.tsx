@@ -1,3 +1,5 @@
+// app/layout.tsx
+
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
@@ -46,17 +48,7 @@ export const metadata: Metadata = {
       'Technical Support Specialist with expertise in Unix server administration, database management, and production support for financial systems.',
     images: ['/images/preview.png'], // 👈 also points to /public/images/preview.png
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
+  // 🚫 REMOVED: The 'robots' object is removed because it's managed by app/robots.ts
 }
 
 export default function RootLayout({
